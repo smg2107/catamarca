@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
+   <link rel="stylesheet" href="estilos formulario.css">
+   
 </head>
 <body>
     <form action="">
         <h3>Inscripcion al sorteo del libro</h3>
-        <div>
+        <div class="dato">
         <label for="">Nombre</label>
         <input type="text" name="nombre">
 
         <label for="">Apellido</label>
         <input type="text" name="apellido">
-        <label for="">Fecha de nacimiento</label>
-        <input type="date" name="nac" id="">
+        
     </div>
-    <div>
+    <div class="dato"><label for="">Fecha de nacimiento</label>
+        <input type="date" name="nac" id=""></div>
+    <div class="dato">
         <label for="">Email</label>
         <input type="email" name="mail" id="">
         <label for="">Telefono</label>
@@ -25,7 +28,7 @@
 
         
     </div>
-    <div>
+    <div class="dato">
         <p>Selecione su sexo</p>
         <input type="radio" name="sexo" value="m" id="">
         <label for="">Masculino</label>
@@ -34,7 +37,7 @@
         <input type="radio" name="sexo" value="g" id="">
         <label for="">Sin genero</label>
     </div>
-    <div>
+    <div class="dato">
         <p>Seleccione su pais</p>
         <select name="pais" id="">
             <option value="Argentina">Argentina</option>
@@ -45,14 +48,17 @@
             <option value="Chile">Chile</option>
         </select>
     </div>
-<div>
+<div class="dato">
     <label for="">Ciudad</label>
   <input type="text" name="ciudad">
 <label for="">CP</label>
 <input type="number" name="cp" id="">
 </div> 
-<label for="">Foto DNI</label>
+<label for="" id="dni">Foto DNI</label>
 <input type="file" name="foto" id="">
+<div id="submit">
+    <input type="submit" value="Enviar">
+</div> 
     </form>
 </body>
 </html>
