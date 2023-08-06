@@ -1,0 +1,16 @@
+
+#pelicula   {
+    display: grid;
+    grid-template-columns: repeat(6,1);
+    width: 90%;
+    margin: 5%;
+    grid-gap: 30px;
+}
+#pelicula   img{
+    
+    transition: all 300ms;
+    position: relative;
+}
+#pelicula img:hover{
+    transform: scale(1.15);
+}

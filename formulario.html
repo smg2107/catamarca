@@ -5,37 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
    <link rel="stylesheet" href="estilos formulario.css">
+   <link rel="icon" type="image/x-icon" href="icono.jpg">
    
 </head>
 <body>
     <form action="">
         <h3>Inscripcion al sorteo del libro</h3>
         <div class="dato">
-        <label for="">Nombre</label>
-        <input type="text" name="nombre">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" name="nombre">
 
-        <label for="">Apellido</label>
-        <input type="text" name="apellido">
+        <label for="apellido">Apellido</label>
+        <input id="apellido" type="text" name="apellido">
         
     </div>
-    <div class="dato"><label for="">Fecha de nacimiento</label>
-        <input type="date" name="nac" id=""></div>
+    <div class="dato"><label for="nac">Fecha de nacimiento</label>
+        <input id="nac" type="date" name="nac" id=""></div>
     <div class="dato">
-        <label for="">Email</label>
-        <input type="email" name="mail" id="">
-        <label for="">Telefono</label>
-        <input type="number" name="tel" id="">
+        <label for="mail">Email</label>
+        <input id="mail" type="email" name="mail" id="">
+        <label for="tel">Telefono</label>
+        <input id="tel" type="number" name="tel" id="">
 
         
     </div>
     <div class="dato">
         <p>Selecione su sexo</p>
-        <input type="radio" name="sexo" value="m" id="">
-        <label for="">Masculino</label>
-        <input type="radio" name="sexo" value="f" id="">
-        <label for="">Femenino</label>
-        <input type="radio" name="sexo" value="g" id="">
-        <label for="">Sin genero</label>
+        <input id="masc" type="radio" name="sexo" value="m" id="">
+        <label for="masc">Masculino</label>
+        <input id="fem" type="radio" name="sexo" value="f" id="">
+        <label for="fem">Femenino</label>
+        <input id="sg" type="radio" name="sexo" value="g" id="">
+        <label for="sg">Sin genero</label>
     </div>
     <div class="dato">
         <p>Seleccione su pais</p>
@@ -49,13 +50,15 @@
         </select>
     </div>
 <div class="dato">
-    <label for="">Ciudad</label>
-  <input type="text" name="ciudad">
-<label for="">CP</label>
-<input type="number" name="cp" id="">
+    <label for="ciudad">Ciudad</label>
+  <input id="ciudad" type="text" name="ciudad">
+<label for="cp">CP</label>
+<input id="cp" type="number" name="cp" id="">
 </div> 
-<label for="" id="dni">Foto DNI</label>
-<input type="file" name="foto" id="">
+<div>
+<label for="foto">Foto DNI</label>
+<input id="foto" type="file" name="foto" id="">
+</div>
 <div id="submit">
     <input type="submit" value="Enviar">
 </div> 
